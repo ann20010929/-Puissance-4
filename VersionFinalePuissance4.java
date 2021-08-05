@@ -192,8 +192,9 @@ class VersionFinalePuissance4 {
     }
 
     //====================================================================
+    /* meth joue version2 : teste si le coup est valide.
+     * Si le coup n'est pas valide, la raison pour laquelle est que la col est pleine.*/
     static boolean joueVer2(int[][] grille, int couleur) {
-
         int colonne = demandeColonneInBounds(grille);
         // on teste d'abord si la col est pleine.
         // si la col est pleine, alors le coup n'est pas valide <-- return false
@@ -215,6 +216,7 @@ class VersionFinalePuissance4 {
         return true;
     }
 
+    /*demande le num de colonne et verifie que ce num est compris entre 0 et 6 inclus */
     static int demandeColonneInBounds(int[][] grille) {
         int colonne;
         do {
@@ -228,4 +230,5 @@ class VersionFinalePuissance4 {
         return colonne;
     }
 
+    //    =========================================================================================
 }
